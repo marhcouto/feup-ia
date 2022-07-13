@@ -1,0 +1,37 @@
+
+
+\begin{frame}{Problem Formulation as a Search Problem}
+    \textbf{State Representation:} With N being the number of moves allowed, state S is an array of size N of the movements chosen. \\
+    \textbf{Initial State:} A random state. E.g. S = [Right,Up,Left,Down] \\
+    \textbf{Objective Test:} The cycle of movements of the given state, repeated indefinitely, always changes position after an iteration and eventually reaches the goal spot. \\
+    \textbf{Operators:}
+    \begin{table}
+        \begin{tabular}{l l l l}
+            \toprule
+            \textbf{Operator} & \textbf{Pre-Condition} & \textbf{Effect} & \textbf{Cost} \\
+            \midrule
+            ChangeMov(i,m)  & $ i >= 0 \land i < N \land S[i] \neq m $ & $S[i] = m $  & 1 \\
+            \bottomrule
+        \end{tabular}
+        \caption{Operators}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}{Problem Formulation as a Search Problem}
+    \textbf{Heuristics}
+    \begin{itemize}
+        \item \textbf{Compare with shortest path}
+        \begin{enumerate}
+            \item Calculate shortest path from start to finish
+            \item Simulate current solution 
+            \item Compare the two paths. The closest to the shortest path the better the solution
+        \end{enumerate}
+        \item \textbf{Manhattan Distance}
+        \begin{enumerate}
+            \item Simulate the current solution
+            \item Calculate Manhattan Distance from where the robot got stuck to the goal
+        \end{enumerate}
+    \end{itemize}
+    
+\end{frame}

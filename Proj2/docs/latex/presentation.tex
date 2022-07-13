@@ -1,0 +1,59 @@
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimplePlus}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=brown,
+    linkbordercolor=1 1 1,
+    citebordercolor=1 1 1,
+    linkbordercolor=1 1 1,
+    menubordercolor=1 1 1,
+    urlbordercolor=1 1 1,
+}
+
+% images
+\usepackage{graphicx} 
+\usepackage{tikz}
+
+%
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+
+\title[short title]{\textbf{Credit Card Fraud}} 
+\subtitle{Project II Checkpoint I - Artificial Inteligence}
+\author[Marcelo  Francisco] {\textbf{Grupo 04\_1A} \\ \begin{tabular}{r l} 
+	\email{up201906086@up.pt} & Marcelo Henriques Couto \\
+	\email{up201907361@up.pt} & Francisco Pinto de Oliveira \\
+\end{tabular}
+}
+
+\institute[FEUP] 
+{
+    Faculdade de Engenharia da Universidade do Porto
+}
+\date{\today} 
+
+
+
+\begin{document}
+
+\begin{frame}
+    \tikz [remember picture,overlay]
+        \node at
+            ([yshift=2.5cm]current page.center) 
+            {\includegraphics[width=.3\textwidth,height=.2\textheight]{images/unnamed.png}};
+    \titlepage
+\end{frame}
+
+\input{problem_specification}
+\input{related_work}
+\input{tools_and_algorithms}
+\input{implementation}
+\input{preprocessing}
+\input{models}
+\input{conclusions}
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimplePlus}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=brown,
+    linkbordercolor=1 1 1,
+    citebordercolor=1 1 1,
+    linkbordercolor=1 1 1,
+    menubordercolor=1 1 1,
+    urlbordercolor=1 1 1,
+}
+
+% images
+\usepackage{graphicx} 
+
+%
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+
+\title[short title]{\textbf{Robot Mazes}} 
+\subtitle{Project I Checkpoint - Artificial Inteligence}
+
+\author[Marcelo  Francisco] {\textbf{Grupo 21} \\ \begin{tabular}{r l} 
+	\email{up201906086@up.pt} & Marcelo Henriques Couto \\
+	\email{up201907361@up.pt} & Francisco Pinto de Oliveira \\
+\end{tabular}
+}
+
+\institute[FEUP] 
+{
+    Faculdade de Engenharia da Universidade do Porto
+}
+\date{\today} 
+
+
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\input{problem_description}
+\input{related_work}
+\input{formulation}
+\input{implementation}
+
+\end{document}

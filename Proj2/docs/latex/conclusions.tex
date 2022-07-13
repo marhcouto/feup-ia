@@ -1,0 +1,12 @@
+\begin{frame}{Conclusions}
+    
+    From the graphs and table we are able to conclude that:
+    \begin{itemize}
+        \item The best models were the ones based in Random Forest and Decision Tree algorithms, which goes accordingly to their resistance against imbalance. Random Forest did not present much advantage as the Decision Tree models already featured perfect scores and clearly did not suffer from overfitting
+        \item The worse models were the ones based in Logistic Regression algorithms, most likely because of their sensitivity to imbalance and overall lack of robustness
+        \item K Nearest Neighbours models were way too slow to be a viable option, so much so that we only trained and tested with 10\% of the data set
+        \item Multi-layer Perceptron based models were not worth the complexity, as their results were not their great and the training time was big
+        \item SMOTE and class weights had a decent impact in LR, yet they did not show mutch effects on the other algorithms
+    \end{itemize}
+
+\end{frame}
